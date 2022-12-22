@@ -26,6 +26,8 @@ default: &default
 development:
   <<: *default
   database: address_book_lastname_firstname_development
+  username: address_book_lastname_firstname
+  password: <%= ENV["ADDRESS_BOOK_LASTNAME_FIRSTNAME_DATABASE_PASSWORD"] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
