@@ -1,0 +1,286 @@
+
+---
+addresses:
+  columns:
+  - id
+  - person_id
+  - street
+  - town
+  - zip
+  - state
+  - created_at
+  - updated_at
+  - people_id
+  - country
+  - user_id
+  records: 
+  - - 9
+    - 18
+    - 6401 Rialto Blvd
+    - Austin
+    - 78735
+    - Texas
+    - 2022-12-20 19:43:18.147549000 Z
+    - 2022-12-20 19:43:18.147549000 Z
+    -
+    - United States
+    - 5
+  - - 11
+    - 20
+    - '1962'
+    - San Antonio
+    - 78230
+    - Texas
+    - 2022-12-20 21:06:05.369178000 Z
+    - 2022-12-20 21:06:13.780403000 Z
+    -
+    - United States
+    - 4
+  - - 17
+    - 20
+    - t
+    - t
+    - 666666
+    - t
+    - 2022-12-20 21:50:08.560510000 Z
+    - 2022-12-20 21:50:08.560510000 Z
+    -
+    - t
+    - 4
+  - - 18
+    - 19
+    - 6401 Rialto Blvd
+    - Austin
+    - 78735
+    - Texas
+    - 2022-12-21 04:11:12.771748000 Z
+    - 2022-12-21 04:11:12.771748000 Z
+    -
+    - US
+    - 1
+  - - 20
+    - 19
+    - 2678 Drewberry Lane
+    - Austin
+    - 76943
+    - Texas
+    - 2022-12-21 16:46:46.035576000 Z
+    - 2022-12-21 16:46:46.035576000 Z
+    -
+    - US
+    - 1
+  - - 21
+    - 19
+    - 3976 Foggy Lane
+    - Austin
+    - 79543
+    - Texas
+    - 2022-12-21 16:49:24.946801000 Z
+    - 2022-12-21 16:49:24.946801000 Z
+    -
+    - US
+    - 1
+  - - 22
+    - 19
+    - 3792 Ferguson Dr
+    - Boston
+    - 59723
+    - Massachusetts
+    - 2022-12-21 17:05:06.863679000 Z
+    - 2022-12-21 17:05:06.863679000 Z
+    -
+    - US
+    - 1
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2022-12-15 16:26:37.799306000 Z
+    - 2022-12-15 16:26:37.799306000 Z
+
+---
+emails:
+  columns:
+  - id
+  - person_id
+  - email_address
+  - comment
+  - created_at
+  - updated_at
+  - people_id
+  - user_id
+  records: 
+  - - 6
+    - 18
+    - xamiemmorales@gmail.com
+    - 'Amie''s Email '
+    - 2022-12-20 19:43:49.669261000 Z
+    - 2022-12-20 19:43:49.669261000 Z
+    -
+    - 5
+  - - 7
+    - 19
+    - willmauldin46@gmail.com
+    - Will's Email
+    - 2022-12-20 20:09:46.310489000 Z
+    - 2022-12-20 20:09:46.310489000 Z
+    -
+    - 1
+  - - 8
+    - 20
+    - anitamo@gmail.com
+    - Anita's Email
+    - 2022-12-20 21:06:52.634364000 Z
+    - 2022-12-20 21:06:52.634364000 Z
+    -
+    - 4
+
+---
+people:
+  columns:
+  - id
+  - salutation
+  - first_name
+  - middle_name
+  - last_name
+  - ssn
+  - dob
+  - comment
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 18
+    - Miss
+    - 'Amie '
+    - Michelle
+    - Morales
+    - N/A
+    - '2000-09-13'
+    - Amie's Personal Info.
+    - 2022-12-20 19:42:29.301732000 Z
+    - 2022-12-20 19:42:29.301732000 Z
+    - 5
+  - - 19
+    - Mr.
+    - Will
+    - Michael
+    - Mauldin
+    - N/A
+    - '1999-08-23'
+    - Will's Personal Info.
+    - 2022-12-20 19:54:07.732743000 Z
+    - 2022-12-20 19:54:07.732743000 Z
+    - 1
+  - - 20
+    - Mrs.
+    - Anita
+    - Corona
+    - Morales
+    - N/A
+    - '1971-12-05'
+    - Anita's Personal Info.
+    - 2022-12-20 21:05:17.702414000 Z
+    - 2022-12-20 21:05:43.120139000 Z
+    - 4
+  - - 23
+    - Miss
+    - Amie
+    - Michelle
+    - Morales
+    - N/A
+    - '2000-09-13'
+    - Hello
+    - 2022-12-20 22:07:38.562988000 Z
+    - 2022-12-20 22:07:38.562988000 Z
+    - 4
+  - - 26
+    - Miss
+    - Amie
+    - Michelle
+    - Morales
+    - N/A
+    - '2022-12-21'
+    - Hello There
+    - 2022-12-21 20:28:31.299694000 Z
+    - 2022-12-21 20:28:42.592666000 Z
+    - 6
+
+---
+phone_numbers:
+  columns:
+  - id
+  - person_id
+  - phone_number
+  - comment
+  - created_at
+  - updated_at
+  - people_id
+  - user_id
+  records: 
+  - - 5
+    - 18
+    - 210-863-6087
+    - 'Amie''s Phone #'
+    - 2022-12-20 19:45:35.662961000 Z
+    - 2022-12-20 19:45:35.662961000 Z
+    -
+    - 5
+  - - 6
+    - 19
+    - 210-360-9558
+    - 'Will''s Phone #'
+    - 2022-12-20 20:10:11.665756000 Z
+    - 2022-12-20 20:10:11.665756000 Z
+    -
+    - 1
+  - - 7
+    - 20
+    - 210-452-8255
+    - 'Anita''s Phone #'
+    - 2022-12-20 21:07:32.369451000 Z
+    - 2022-12-20 21:07:32.369451000 Z
+    -
+    - 4
+
+---
+users:
+  columns:
+  - id
+  - email
+  - created_at
+  - updated_at
+  - password_digest
+  records: 
+  - - 1
+    - amie@gmail.com
+    - 2022-12-19 20:22:28.603904000 Z
+    - 2022-12-19 20:22:28.603904000 Z
+    - "$2a$12$oL1l67LwR.yGS6VyRQTqr.ebdbM7LOpXSqacIm8WL07CIdLjSK8nG"
+  - - 2
+    - will@gmail.com
+    - 2022-12-19 20:54:23.438526000 Z
+    - 2022-12-19 20:54:23.438526000 Z
+    - "$2a$12$tMu14KzrpUdLMLxkMLItsenU4xgAHRvmti0m014fjKXxS3QLyNYNm"
+  - - 4
+    - allymo@gmail.com
+    - 2022-12-19 20:59:30.887989000 Z
+    - 2022-12-19 20:59:30.887989000 Z
+    - "$2a$12$MA.G3p8vZPPO2o9DhMxwr.V1BQvCqPkYMsscCc/s8xPKc3Wpgac52"
+  - - 5
+    - jmo@gmail.com
+    - 2022-12-20 19:41:29.770850000 Z
+    - 2022-12-20 19:41:29.770850000 Z
+    - "$2a$12$fjX/tpuMNdY6eyXH1nDrU.aCDvN8ECuDuPFWBx/AFbQU5ixcqQuMC"
+  - - 6
+    - mike@gmail.com
+    - 2022-12-21 20:28:03.879284000 Z
+    - 2022-12-21 20:28:03.879284000 Z
+    - "$2a$12$Kp1SCc/XQrvyBOGcGEWA0uRpFEoImIZWlfUeQtjIHO7EvmvouZVDG"

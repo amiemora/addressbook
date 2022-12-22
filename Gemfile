@@ -10,11 +10,13 @@ gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.7'
+gem 'jbuilder', '~> 2.7'
+gem "jquery-rails"
+gem "active_model_serializers", "~> 0.10.13"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -34,7 +36,16 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+    #Added testing gems
+    gem "guard"
+    gem "guard-minitest"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'yaml_db'
+gem "country_select", "~> 6.0"
+# gem 'schema_to_scaffold', '~> 0.8.2'
+gem 'activesupport', '>= 6.1.7'
+gem 'schema_to_scaffold', '~> 0.8.0'

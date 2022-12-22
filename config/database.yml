@@ -20,10 +20,12 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: address_book_lastname_firstname
+  password: <%= ENV['ADDRESS_BOOK_LASTNAME_FIRSTNAME_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
-  database: addressbook_development
+  database: address_book_lastname_firstname_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +59,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: addressbook_test
+  database: address_book_lastname_firstname_test
+  username: address_book_lastname_firstname
+  password: <%= ENV["ADDRESS_BOOK_LASTNAME_FIRSTNAME_DATABASE_PASSWORD"] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: addressbook_production
-  username: addressbook
-  password: <%= ENV['ADDRESSBOOK_DATABASE_PASSWORD'] %>
+  database: address_book_lastname_firstname_production
+  username: address_book_lastname_firstname
+  password: <%= ENV["ADDRESS_BOOK_LASTNAME_FIRSTNAME_DATABASE_PASSWORD"] %>
