@@ -1,5 +1,6 @@
 class V1::UsersController < ApplicationController
-    #before_action :authenticate, except: %i[new create]
+    before_action :authenticate, except: %i[create]
+    before_action :find_user, except: %i[create]
     def show 
         render json: @user
     end 

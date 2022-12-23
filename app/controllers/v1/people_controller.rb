@@ -1,11 +1,12 @@
 class V1::PeopleController < ApplicationController
+    before_action :authenticate,
     def index
         @people = Person.all 
 
         render json: @people, status: :ok
     end 
     def show 
-        @person  = Person.where(id: params[:id]).first
+        @person  = Person.find(params[:id])
         render json: @person
     end 
     def create 
@@ -18,7 +19,7 @@ class V1::PeopleController < ApplicationController
         end
     end 
     def update 
-        @person  = Person.where(id: params[:id]).first
+        @person  = Person.find(params[:id])
         if @person.update(person_params)
             render json: @person
         else
@@ -26,7 +27,7 @@ class V1::PeopleController < ApplicationController
         end
     end 
     def destroy 
-        @person  = Person.where(id: params[:id]).first
+        @person  = Person.find(params[:id])
         if @person.destroy
             head(:ok)
         else

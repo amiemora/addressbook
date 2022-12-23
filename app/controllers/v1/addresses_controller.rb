@@ -1,4 +1,5 @@
 class V1::AddressesController < ApplicationController
+    before_action :authenticate
     def index
         @addresses = Address.all 
 

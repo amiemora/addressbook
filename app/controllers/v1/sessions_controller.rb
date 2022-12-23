@@ -4,7 +4,9 @@ class V1::SessionsController < ApplicationController
 
         if @user && @user.authenticate(params[:password])
             login(@user)
-            render json: @user.as_json(only: [:id, :email])
+            # maybe add a token?
+            #render json: {token: '123', status: :created}
+            render :create, status: :created
         else
             head(:unauthorized)
         end

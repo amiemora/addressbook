@@ -1,4 +1,5 @@
 class V1::PhoneNumbersController < ApplicationController
+    before_action :authenticate
     def index
         @phone_number = PhoneNumber.all 
 

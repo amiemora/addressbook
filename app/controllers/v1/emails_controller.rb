@@ -1,4 +1,5 @@
 class V1::EmailsController < ApplicationController
+    before_action :authenticate
     def index
         @email = Email.all 
 
